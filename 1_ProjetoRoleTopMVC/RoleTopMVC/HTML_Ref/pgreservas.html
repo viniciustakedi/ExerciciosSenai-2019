@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rolê Top | Reserve seu evento conosco!!</title>
+    <link href="img/logo (1).png" rel="icon" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="pgreservas.css">
+    <script src="https://kit.fontawesome.com/349a64cb04.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <br>
+        <br>
+        <nav>
+            <div class="section-container">
+                <ul>
+                    <li id="bt-mobile-menu">
+                        <a href="javascript:void(0);" class="icon" onclick="toggleMobileMenu()">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </li>
+                    <li id="logo-tipo">
+                        <img src="img/logo (1).png" title="logo" height="90" width="120">
+                    </li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="pgp.html">Home</a></li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="pggaleria.html">Galeria</a></li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="pgreservas.html">Reservar</a></li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="pglogin.html">Login</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+<main>
+    <div class="agendareventos">
+        <h1>Reserve seu evento</h1>
+        <form>
+            <p>Nome do evento</p>
+            <input type="text" name="" placeholder="Insira o nome do seu evento" required>
+            <p>CPF ou CNPJ</p>
+            <input type="text" name="" placeholder="Insira seu CPF ou CNPJ" required>
+            <p>Email</p>
+            <input type="text" name="" placeholder="Insira seu Email">
+            <p>Data do evento</p>
+
+            <form method="GET" action="script.php">
+                <label for="date"></label>
+                <input type="date" id="data" name="calendario">
+            </form>
+
+            <p>Evento</p>
+            <select name="" id="privadorpublic" required>
+                <option></option>
+                <option value="">Privado</option>
+                <option value="">Público</option>
+            </select>
+            <div class="textarea">
+                <textarea name="" placeholder="Informações do seu evento " minlength="20" maxlength="500"></textarea>
+            </div>
+            <p>Preço e forma de pagamento</p><br>
+            <p>Aluguel salão = R$10.000,00</p>
+            <select name="" id="som">
+                <option>Som</option>
+                <option value="" required>Adicionar (R$800,00)</option>
+                <option value="" required>Não adicionar</option>
+            </select>
+            <select name="" id="Luz">
+                <option>Luz</option>
+                <option value="" required>Adicionar (R$750,00)</option>
+                <option value="" required>Não adicionar</option>
+            </select>
+
+            <p>Forma de pagamento</p>
+            <select name="" id="cardorbolet">
+                <option></option>
+                <option value="">Cartão</option>
+                <option value="">Boleto</option>
+            </select>
+
+            <input type="submit" name="" value="Pronto">
+
+
+        </form>
+
+    </div>
+</main>
+
+
+    <script>
+        function toggleMobileMenu() {
+            var ul = document.querySelector("nav ul");
+            var commonButtons = document.querySelectorAll("nav .bt-common-menu");
+            var icon = document.querySelector(".icon > i");
+            ul.classList.toggle("mobile-mode");
+            if (icon.classList.contains("fa-bars")) {
+                icon.classList.remove("fa-bars");
+                icon.classList.remove("fa");
+                icon.classList.add("fas");
+                icon.classList.add("fa-skull");
+            } else {
+                icon.classList.remove("fas");
+                icon.classList.remove("fa-skull");
+                icon.classList.add("fa");
+                icon.classList.add("fa-bars");
+            }
+            for (var button of commonButtons) {
+                button.classList.toggle("active");
+            }
+        }
+
+    </script>
+</body>
+
+</html>

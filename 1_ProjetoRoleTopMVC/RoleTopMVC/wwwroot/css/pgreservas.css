@@ -1,0 +1,306 @@
+/* ===========================================================================================================================
+                                                            COMEÇO BODY
+=============================================================================================================================== */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+font-family: 'Raleway', sans-serif;
+height: 1080px;
+background-color: #7D0093;
+}
+
+
+/* ===========================================================================================================================
+                                                            FIM BODY
+=============================================================================================================================== */
+/* ===========================================================================================================================
+                                                        COMEÇO HEADER
+=============================================================================================================================== */
+header{
+    text-align: center;
+    position: relative;
+    top: -2em;
+    padding: 5em;
+}
+
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.2em;
+    list-style-type: none;
+    padding: 2.5em;
+}
+
+nav ul > li {
+    width: 100%;
+    text-align: center;
+}
+
+nav ul > li > a {
+	display: block;
+	padding: 0.4em;
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
+}
+
+nav ul > li > a:hover {
+    color: #fff;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1{
+    font-size: 2.6em;
+}
+
+/* ===========================================================================================================================
+                                                            FIM HEADER
+=============================================================================================================================== */
+
+address{
+    text-align: center;
+    background-color: #e8d94f ;
+    position: relative;
+    top: 2em;
+}
+
+#servicosAdd{
+    width: 3em;
+
+}
+
+.agendareventos{
+    width: 530px;
+    height: 1100px;
+    border:2px solid #000;
+    border-radius: 80px 0px 90px 0px;
+    color: #fff;
+    background-color: rgba(0,0,5,0.8);
+    position: relative;
+    top: 30em;
+    left: 57em;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 60px 28px;
+}
+
+.usuario{
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 112px;
+}
+
+h1{
+    margin: 0;
+    padding-top: 0;
+    padding-left: 0;
+    padding-bottom: 20px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size:25px;
+}
+
+.agendareventos p{
+    margin: 0;
+    padding:0;
+    font-weight: bold;    
+}
+
+.agendareventos input{
+    width: 100%;
+    margin-bottom: 21px;;
+}
+
+.agendareventos input[type="text"], input[type="password"]{
+    border: none;
+    border-bottom: 1px solid white;
+    background: transparent;
+    height: 40px;
+    outline: none;
+    color:white;
+    font-size:16px;
+}
+
+.agendareventos input[type="submit"]{
+    border: none;
+    outline: none;
+    height: 35px;
+    color: #000;
+    background: #fff;
+    border-radius: 20px;
+    transition: 1.2s;
+}
+
+.agendareventos input[type="submit"]:hover{
+    cursor: pointer;
+    background: #7D0093;
+    transition: 1.2s;
+}
+
+form a{
+    color: white;
+    
+}
+
+.textarea{
+    height:120px ;
+    width: 190px;
+    line-height: 100px;
+    
+}
+
+input, textarea{
+    width: 462px;
+    padding: 6px;
+}
+
+#privadorpublic{
+    padding: 0.1em;
+    margin: 0.85em;
+}
+
+#cardorbolet{
+    margin: 0.85em;
+}
+
+#luz{
+    margin: 0.85em;
+}
+
+#som{
+    margin: 0.85em;
+}
+/* FIM */
+
+/* COMEÇO MEDIA */
+nav #bt-mobile-menu {
+    display: none;
+}
+
+@media(max-width: 600px){
+nav #bt-mobile-menu {
+    display: block;
+}
+
+nav .bt-common-menu {
+    display: none;
+}
+
+nav .bt-common-menu.active {
+    display: block;
+}
+
+nav ul.mobile-mode {
+    display: flex;
+    flex-direction: column;
+    }
+
+    .agendareventos{
+        width: 300px;
+        height: 970px;
+        border:2px solid #000;
+        border-radius: 80px 0px 90px 0px;
+        color: #fff;
+        background-color: rgba(0,0,5,0.8);
+        top: 30em;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        box-sizing: border-box;
+        padding: 60px 28px;
+    }
+    
+    .usuario{
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 112px;
+    }
+    
+    h1{
+        margin: 0;
+        padding-top: 0;
+        padding-left: 0;
+        padding-bottom: 20px;
+        letter-spacing: 10px;
+        text-transform: uppercase;
+        text-align: center;
+        font-size:25px;
+    }
+    
+    .agendareventos p{
+        margin: 0;
+        padding:0;
+        font-weight: bold;    
+    }
+    
+    .agendareventos input{
+        width: 100%;
+        margin-bottom: 21px;;
+    }
+    
+    .agendareventos input[type="text"], input[type="password"]{
+        border: none;
+        border-bottom: 1px solid white;
+        background: transparent;
+        height: 40px;
+        outline: none;
+        color:white;
+        font-size:16px;
+    }
+    
+    .agendareventos input[type="submit"]{
+        border: none;
+        outline: none;
+        height: 35px;
+        color: #000;
+        background: #fff;
+        border-radius: 20px;
+        transition: 1.2s;
+    }
+    
+    .agendareventos input[type="submit"]:hover{
+        cursor: pointer;
+        background: #7D0093;
+        transition: 1.2s;
+    }
+    
+    form a{
+        color: white;
+        
+    }
+    
+    .textarea{
+        height:120px ;
+        width: 120px;
+        line-height: 100px;
+    }
+    
+    input, textarea{
+        width: 240px;
+        padding: 6px;
+    }
+    
+    #privadorpublic{
+        padding: 0.1em;
+        margin: 0.85em;
+    }
+    
+    #cardorbolet{
+        margin: 0.85em;
+    }
+    
+}

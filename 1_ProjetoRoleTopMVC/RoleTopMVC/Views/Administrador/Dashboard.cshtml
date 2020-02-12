@@ -1,0 +1,75 @@
+<link href="~/css/pgadm.css" rel="stylesheet" type="text/css">
+@model RoleTopMVC.ViewModels.DashboardViewModel
+    <main>
+        <h2>Dashboard</h2>
+        <section id="status-pedidos">
+            <h3>Status dos eventos</h3>
+            <div id="painel">
+
+                <div class="box-status-pedidos aprovados">
+                    <h4 ><a asp-action="Aprovado" asp-controller="Administrador">Aprovados</a></h4>
+                    <p>@Model.AgendamentosAprovados</p>
+                </div>
+
+                <div class="box-status-pedidos pendentes">
+                    <h4 ><a asp-action="Dashboard" asp-controller="Administrador">Pendentes</a></h4>
+                    <p>@Model.AgendamentosPendentes</p>
+                </div>
+
+                <div class="box-status-pedidos reprovados">
+                    <h4 ><a asp-action="Reprovado" asp-controller="Administrador">Reprovados</a></h4>
+                    <p>@Model.AgendamentosReprovados</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="lista-pedidos">
+            <h3>Lista de eventos</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th rowspan="2">Nome </th>
+                        <th rowspan="2">Email</th>
+                        <th rowspan="2">Nome do evento</th>
+                        <th rowspan="2">Evento</th>
+                        <th rowspan="2">Data Evento</th>
+                        <th rowspan="2">Informações</th>
+                        <th rowspan="2">Forma pagamento</th>
+                        <th colspan="2">Serviços adicionais e preço total</th>
+                        <th colspan="2" rowspan="2">Aprovar</th>
+                    </tr>
+                        <tr>
+                        <th><i class="fas fa-tools"></i></th>
+                        <th><i class="fas fa-dollar-sign"></i></th>
+                        
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    @foreach(var agendamento in Model.Agendamentos )
+                    {
+                        <tr>
+                            <td>@agendamento.Cliente.Nome</td>
+                            <td>@agendamento.Cliente.Email</td>
+                            <td>@agendamento.NomeEvento</td>
+                            <td>@agendamento.PubPriv</td>
+                            <td>@agendamento.DataDoEvento</td>
+                            <td>@agendamento.Informacoes</td>
+                            <td>@agendamento.formaPagamento</td>
+                            <td>@agendamento.ServicosAdicionais</td>
+                            <td>@agendamento.PrecoTotal</td>
+                            <td><a href='@Url.Action("Aprovar", "Reservar", new {id = @agendamento.Id})'><i class="fas fa-check"></i></a></td>
+                            <td><a href='@Url.Action("Reprovar", "Reservar", new {id = @agendamento.Id})'><i class="fas fa-times"></i></a></td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </section>
+        <br>
+
+
+
+    </main>

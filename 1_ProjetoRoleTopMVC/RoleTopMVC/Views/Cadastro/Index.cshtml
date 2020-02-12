@@ -1,0 +1,27 @@
+<link rel="stylesheet" type= "text/css" href="~/css/pgcadastro.css">
+<main>
+    <br>
+    <br>
+
+    <div class="cadastro">
+        <img src="" class="usuario">
+        <h1>Cadastro</h1>
+
+        <form name="formteste" action='@Url.Action("CadastrarCliente" , "Cadastro")' method="POST" >
+            <p>Nome</p>
+            <input type="text" name="nome" placeholder="Insira seu nome" required>
+            <p>Idade</p>
+            <input type="number" name="idade" placeholder="Insira sua idade (Ex: 21)" maxlength="3" >
+            <p>Email</p>
+            <input type="text" name="email" placeholder="Insira seu email" maxlength="25" required>
+            <p>CPF / CNPJ</p>
+            <input type="number" name="cpf" placeholder="Somente números" minlength="11" maxlength="15" required>
+            <p>Senha</p>
+            <input type="password" name="senha" placeholder="Insira sua senha" maxlength="20" minlength="6" required>
+            <input type="password" name="" placeholder="Confirme sua senha" maxlength="20" minlength="6" required>
+
+            <input type="submit" name="" value="Finalizar cadastro">
+        </form>
+    </div>
+
+</main>

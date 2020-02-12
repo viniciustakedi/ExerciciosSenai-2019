@@ -1,0 +1,5 @@
+tipo_usuario=0;nome=Administrador;idade=0;email=admin@email.com;cpf=000000000;senha=123123
+tipo_usuario=1;nome=Takedi;idade=16;email=takedi@email.com;cpf=48730204844;senha=123123
+tipo_usuario=1;nome=Leoncio Almeida;idade=45;email=leoncio@bol.com.br;cpf=44455265987;senha=123123
+tipo_usuario=1;nome=Rolindo Augosto;idade=56;email=rolindoobrabo@gmail.com;cpf=55962302545;senha=123123
+tipo_usuario=1;nome=Murilo;idade=16;email=murilo@email.com;cpf=444555666230;senha=123123

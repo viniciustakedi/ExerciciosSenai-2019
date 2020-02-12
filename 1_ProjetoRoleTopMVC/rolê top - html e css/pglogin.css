@@ -1,0 +1,191 @@
+/* ===========================================================================================================================
+                                                            COMEÇO BODY
+=============================================================================================================================== */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+font-family: 'Raleway', sans-serif;
+background-image: url(img/backgroundpgp.png);
+background-size: cover;
+background-repeat: no-repeat;
+}
+/* ===========================================================================================================================
+                                                            FIM BODY
+=============================================================================================================================== */
+/* ===========================================================================================================================
+                                                            COMEÇO TELA LOGIN
+=============================================================================================================================== */
+
+.login{
+    width: 320px;
+    height: 420px;
+    border:2px solid #000;
+    border-radius: 80px 0px 90px 0px;
+    color: #fff;
+    background-color: rgba(0,0,5,0.8);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 60px 28px;
+}
+
+
+h1{
+    margin: 0;
+    padding-top: 0;
+    padding-left: 0;
+    padding-bottom: 20px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size:25px;
+}
+
+.login p{
+    margin: 0;
+    padding:0;
+    font-weight: bold;  
+    
+}
+
+.login input{
+    width: 100%;
+    margin-bottom: 21px;;
+}
+
+.login input[type="text"], input[type="password"]{
+    border: none;
+    border-bottom: 1px solid white;
+    background: transparent;
+    height: 40px;
+    outline: none;
+    color:white;
+    font-size:16px;
+}
+
+.login input[type="submit"]{
+    border: none;
+    outline: none;
+    height: 35px;
+    color: #000;
+    color: #a318be;  
+    border-radius: 20px;
+    transition: 1.2s;
+}
+
+.login input[type="submit"]:hover{
+    cursor: pointer;
+    background: #7D0093;
+    transition: .2s;
+}
+
+form a{
+    color: white;
+    
+}
+/* ===========================================================================================================================
+                                                            FIM TELA LOGIN
+=============================================================================================================================== */
+
+/* ===========================================================================================================================
+                                                        COMEÇO HEADER
+=============================================================================================================================== */
+header{
+    text-align: center;
+}
+
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.2em;
+    list-style-type: none;
+    padding: 2.5em;
+}
+
+nav ul > li {
+    width: 100%;
+    text-align: center;
+}
+
+nav ul > li > a {
+	display: block;
+	padding: 0.4em;
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
+}
+
+nav ul > li > a:hover {
+    color: #fff;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/* ===========================================================================================================================
+                                                            FIM HEADER
+=============================================================================================================================== */
+
+nav #bt-mobile-menu {
+    display: none;
+}
+
+@media(max-width: 600px){
+    nav #bt-mobile-menu {
+        display: block;
+    }
+    
+    nav .bt-common-menu {
+        display: none;
+    }
+    
+    nav .bt-common-menu.active {
+        display: block;
+    }
+    
+    nav ul.mobile-mode {
+        display: flex;
+        flex-direction: column;
+        }
+
+        header{
+            font-family: 'Raleway', sans-serif;
+            background-color: #e8d94f;
+            height: 100%;
+            background-repeat: no-repeat;
+            }
+        
+        body{
+                font-family: 'Raleway', sans-serif;
+                background-color: #e8d94f;
+                height: 100%;
+                background-repeat: no-repeat;
+                }
+
+        .login{
+            width: 230px;
+            height: 480px;
+            border:2px solid #000;
+            border-radius: 80px 0px 90px 0px;
+            color: #fff;
+            background-color: rgba(0,0,5,0.8);
+            top: 70%;
+            left: 50%;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            box-sizing: border-box;
+            padding: 60px 28px;
+        }
+    }

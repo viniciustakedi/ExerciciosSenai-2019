@@ -1,0 +1,150 @@
+/* ===========================================================================================================================
+                                                            COMEÇO BODY
+=============================================================================================================================== */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+font-family: 'Raleway', sans-serif;
+height: 1080px;
+background-image: url(../img/backgroundpgp.png);
+background-size: cover;
+background-repeat: no-repeat;
+}
+/* ===========================================================================================================================
+                                                            FIM BODY
+=============================================================================================================================== */
+/* ===========================================================================================================================
+                                                        COMEÇO HEADER
+=============================================================================================================================== */
+header{
+    text-align: center;
+    position: relative;
+    top:  -2em;
+    padding: 5em;
+}
+
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.2em;
+    list-style-type: none;
+    padding: 2.5em;
+}
+
+nav ul > li {
+    width: 100%;
+    text-align: center;
+}
+
+nav ul > li > a {
+	display: block;
+	padding: 0.4em;
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
+}
+
+nav ul > li > a:hover {
+    color: #fff;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1{
+    font-size: 2.6em;
+}
+
+/* ===========================================================================================================================
+                                                            FIM HEADER
+=============================================================================================================================== */
+/* ===========================================================================================================================
+                                                            COMEÇO TELA CADASTRO
+=============================================================================================================================== */
+
+
+.cadastro{
+    width: 475px;
+    height: 600px;
+    border:2px solid #000;
+    border-radius: 80px 0px 90px 0px;
+    color: #fff;
+    background-color: rgba(0,0,5,0.8);
+    top: 55%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 60px 28px;
+}
+
+.usuario{
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 112px;
+}
+
+h1{
+    margin: 0;
+    padding-top: 0;
+    padding-left: 0;
+    padding-bottom: 20px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size:25px;
+}
+
+.cadastro p{
+    margin: 0;
+    padding:0;
+    font-weight: bold;    
+}
+
+.cadastro input{
+    width: 100%;
+    margin-bottom: 21px;;
+}
+
+.cadastro input[type="text"], input[type="password"]{
+    border: none;
+    border-bottom: 1px solid white;
+    background: transparent;
+    height: 40px;
+    outline: none;
+    color:white;
+    font-size:16px;
+}
+
+.cadastro input[type="submit"]{
+    border: none;
+    outline: none;
+    height: 35px;
+    color: #000;
+    background: #fff;
+    border-radius: 20px;
+    transition: 1.2s;
+}
+
+.cadastro input[type="submit"]:hover{
+    cursor: pointer;
+    background: #7D0093;
+    transition: 1.2s;
+}
+
+address{
+    text-align: center;
+    background-color: #a318be ;
+    position: relative;
+    top: 45em;
+}

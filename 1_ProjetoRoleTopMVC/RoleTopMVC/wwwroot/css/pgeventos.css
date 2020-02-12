@@ -1,0 +1,121 @@
+/* ===========================================================================================================================
+                                                            COMEÇO BODY
+=============================================================================================================================== */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+font-family: 'Raleway', sans-serif;
+background-color: #a318be;
+}
+
+
+/* ===========================================================================================================================
+                                                            FIM BODY
+=============================================================================================================================== */
+header{
+    text-align: center;
+    position: relative;
+    top: -2em;
+    padding: 5em;
+}
+
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.2em;
+    list-style-type: none;
+    padding: 2.5em;
+}
+
+nav ul > li {
+    width: 100%;
+    text-align: center;
+}
+
+nav ul > li > a {
+	display: block;
+	padding: 0.4em;
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
+}
+
+nav ul > li > a:hover {
+    color: #fff;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1{
+    font-size: 2.6em;
+}
+
+/* ===========================================================================================================================
+                                                            FIM HEADER
+=============================================================================================================================== */
+
+h1{
+    margin: 0;
+    padding-top: 0;
+    padding-left: 0;
+    padding-bottom: 20px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size:25px;
+}
+
+form a{
+    color: white;
+    
+}
+
+.nomeeventoelink{
+    font-size: 1.5em;
+    flex-direction: row;
+    padding: 1.0em;
+    height:562px;
+}
+
+
+.eventonome{
+    display: block;
+	padding: 0.4em;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+
+.eventonome > a:hover{
+    color: #fff;
+    font-size: 1.2em;
+}
+
+h1{
+    text-align: center;
+}
+
+
+
+
+/* ===========================================================================================================================
+                                                        COMEÇO FOOTER
+=============================================================================================================================== */
+address{
+    text-align: center;
+    background-color: #e8d94f ;
+    position: relative;
+    top: 5em;
+}
+

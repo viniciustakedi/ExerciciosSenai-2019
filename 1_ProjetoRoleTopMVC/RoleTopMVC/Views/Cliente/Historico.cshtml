@@ -1,0 +1,47 @@
+@model RoleTopMVC.ViewModels.HistoricoViewModel
+@{
+    ViewData["Title"] = " Agendamentos - RoleTop";
+    ViewData["H2"] = "Histórico de Eventos";
+
+}
+
+<main>
+    <h2>@ViewData["H2"]</h2>
+    <br>>
+    <table>
+        <thead>
+            <tr>
+                <th>Data</th>
+                <th>Nome Evento</th>
+                <th>Informações</th>
+                <th>Forma Pagamento</th>
+                <th>Preço</th>
+                <th>Status do Evento</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var agendamento in Model.agendamento) {
+                <tr>
+                    <td>@agendamento.DataDoEvento</td>
+                    <td>@agendamento.NomeEvento</td>
+                    <td>@agendamento.Informacoes</td>
+                    <td>@agendamento.formaPagamento</td>
+                    <td>@agendamento.PrecoTotal</td>
+                    <td>@if(@agendamento.Status == 0)
+                        {
+                            <p>Pendente</p>
+
+                        }else if(@agendamento.Status == 1)
+                        {
+                            <p>Aprovado</p>
+                        }else{
+                            <p>Reprovado</p>
+                        }
+                        
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+</main>

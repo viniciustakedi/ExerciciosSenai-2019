@@ -1,0 +1,64 @@
+@model RoleTopMVC.ViewModels.AgendamentoViewModel
+<link rel="stylesheet" type= "text/css" href="~/css/pgreservas.css">
+<main>
+<form name="formtest" action='@Url.Action("Registrar","Reservar")' method="POST">
+    <div class="agendareventos">
+        <h2>Olá @Model.NomeUsuario, reserve seu evento!</h2>
+        <br>
+            <p>Nome</p>
+            <input type="text"  value="@Model.Cliente.Nome" name="nome" placeholder="Insira seu Nome">
+            <p>Email</p>
+            <input type="text"  value="@Model.Cliente.Email" name="email" placeholder="Insira seu Email">
+            <p>CPF ou CNPJ</p>
+            <input type="text"  value="@Model.Cliente.Cpf" name="cpfCnpj" placeholder="Insira seu CPF ou CNPJ" required>
+            <p>Nome do evento</p>
+            <input type="text" name="nomeEvento" placeholder="Insira o nome do seu evento" required>
+            <p>Data do evento</p>
+
+            <div method="GET" action="script.php">
+                <label for="date"></label>
+                <input type="date" id="data" name="calendario">
+            </div>
+
+            <p>Evento</p>
+
+            <select name="pubPriv" id="privadorpublic" required>
+                <option disabled selected>Evento, Publico ou Privado?</option>
+                <option>Privado</option>
+                <option>Público</option>
+            </select>
+
+            <div class="textarea">
+                <textarea name="informacoesdoevento" placeholder="Informações do seu evento " minlength="20" maxlength="500" style="resize: none;  height:95px; width: 471px;" ></textarea>
+            </div>
+            <p>Preço e forma de pagamento</p>
+            <br>
+            <h3>Aluguel salão = R$10.000,00</h3>
+            <br>
+            <p>Serviços adicionais, selecione os de seu interesse. 
+                Luz tem um acrésimo de R$800,00 e o Som de R$700,00.</p>
+
+            @foreach(var Servicos in Model.Servicos)
+            {
+                <input type="checkbox" id="@Servicos.Key"  value="@Servicos.Key" name="ServicosAdicionais" id="servicosAdd" >
+                <label for="@Servicos.Key">@Servicos.Key</label>
+            }
+
+            <p>Forma de pagamento</p>
+            <select name="formaPagamento" id="cardorbolet">
+                <option value="" disabled selected>Forma de pagamento</option>
+
+                @foreach (var pagamento in Model.FormasDePagamento)
+                {
+                    <option value="@pagamento">@pagamento</option>                 
+                }
+
+            </select>
+
+            <input type="submit" name="enviar" value="Confirmar">
+
+
+        </form>
+
+    </div>
+</main>

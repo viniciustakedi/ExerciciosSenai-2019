@@ -1,0 +1,132 @@
+/* ===========================================================================================================================
+                                                            COME�O BODY
+=============================================================================================================================== */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+    background-color: #e8d94f;
+    font-family: 'Raleway', sans-serif;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+/* ===========================================================================================================================
+                                                            FIM BODY
+=============================================================================================================================== */
+
+/* ===========================================================================================================================
+                                                        COME�O HEADER
+=============================================================================================================================== */
+header{
+    text-align: center;
+    position: relative;
+    top: -1em;
+    padding: 5em;
+}
+
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.2em;
+    list-style-type: none;
+    padding: 2.5em;
+}
+
+nav ul > li {
+    width: 100%;
+    text-align: center;
+}
+
+nav ul > li > a {
+	display: block;
+	padding: 0.4em;
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
+}
+
+nav ul > li > a:hover {
+    color: #fff;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1{
+    font-size: 2.6em;
+}
+
+h2{
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+}
+
+h4{
+    text-align: center;
+}
+
+
+/* ===========================================================================================================================
+                                                            FIM HEADER
+=============================================================================================================================== */
+.up-text {
+    vertical-align: top;
+    padding-left: 0.7em;
+}
+
+table {
+    text-align: center;
+    color: black;
+    border: 1px dashed  #a318be;
+    width: 100%;
+    padding: 5px;
+    word-break: normal;
+}
+
+table th {
+    background-color: #a318be;
+}
+
+table a {
+    text-decoration: none;
+    color: black;
+}
+
+table a:hover {
+    text-decoration: underline;
+}
+
+tfoot td {
+    text-align: center;
+    color:black;
+    background-color: #a318be;
+}
+
+thead > tr:first-child > th:last-child {
+    padding: 0 .5em;
+}
+
+address{
+    background-color:  #a318be ;
+    position: relative;
+    top: 45em;
+    text-align: center;
+}
+
+

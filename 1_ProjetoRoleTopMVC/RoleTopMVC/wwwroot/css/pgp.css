@@ -1,0 +1,317 @@
+/* ===========================================================================================================================
+COMEÇO BODY
+=============================================================================================================================== */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    font-family: 'Raleway', sans-serif;
+    background-image: url(../img/backgroundpgp.png);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+/* ===========================================================================================================================
+FIM BODY
+=============================================================================================================================== */
+
+.segundaparteheader{
+    text-align: center;
+    position: relative;
+    top: -29em;
+}
+
+.botaoeventos input[type="submit"]{
+    border: none;
+    outline: none;
+    height: 3em;
+    color: #000;
+    background: rgba(255, 255, 255, 0.534);
+    border-radius: 40em;
+    transition: 1.2s;
+}
+
+.botaoeventos input[type="submit"]:hover{
+    cursor: pointer;
+    background: rgba(125, 0, 147, 0.562);
+    transition: 0.1s;
+}
+
+.botaoeventos input{
+    width: 10%;
+    margin-bottom: 1em;;;
+}
+
+
+.botaoeventos p{
+    font-display: bold;
+    font-size: 4em;
+}
+/* ===========================================================================================================================
+                                                        COMEÇO HEADER
+=============================================================================================================================== */
+header{
+    text-align: center;
+    position: relative;
+    top: -17em;
+    padding: 20.6em;
+}
+
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.2em;
+    list-style-type: none;
+    padding: 2.5em;
+}
+
+nav ul > li {
+    width: 100%;
+    text-align: center;
+}
+
+nav ul > li > a {
+	display: block;
+	padding: 0.4em;
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
+}
+
+nav ul > li > a:hover {
+    color: #fff;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1{
+    font-size: 2.6em;
+}
+
+/* ===========================================================================================================================
+                                                            FIM HEADER
+=============================================================================================================================== */
+
+h1{
+    margin: 0;
+    padding-top: 0;
+    padding-left: 0;
+    padding-bottom: 20px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size:25px;
+}
+
+form a{
+    color: white;
+    
+}
+
+
+/* ===========================================================================================================================
+                                                            COMEÇO SOBRE NÓS
+=============================================================================================================================== */
+.sobrenos{
+    background-color: #a218bec9;
+    padding: 2em 2em;
+    height: 330px;
+}
+
+.sobrenos > img{
+    justify-content: space-between;
+}
+
+.sobrenos p{
+    font-weight: lighter;
+    display: inline;
+    font-size: 1.1em;
+}
+
+
+.imagem{
+    display: table-cell;
+    float: left;
+}
+
+.texto{
+    display: flex;
+    float: left;
+    width: 73em;;
+    margin: 1.0em;
+}
+
+
+/* ===========================================================================================================================
+                                                        FIM SOBRE NÓS
+=============================================================================================================================== */
+
+/* ===========================================================================================================================
+                                                            COMEÇO FOOTER
+=============================================================================================================================== */
+
+.footerd{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color:  #a218bec9;
+    font-size: 1.0em;
+    height: 320px;
+    padding: 1.0em;
+}
+
+.temos{
+    flex-direction: column;
+    font-size: 1.3em;
+}
+
+.rodape{
+    flex-direction: column;
+}
+
+.temosd{
+    text-align: center;
+}
+
+/* .mapagoogle{
+    border: 1px solid black
+} */
+
+footer{
+    height: 10px;
+    
+}
+
+h4{
+    font-size: 1.3em;
+    text-align: center;
+    padding: 1em;
+    
+}
+
+address{
+    text-align: center;
+    background-color: #e6d544d8 ;
+    position: relative;
+    top: 0em;
+}
+/* ===========================================================================================================================
+                                                            FIM FOOTER
+=============================================================================================================================== */
+
+/* ===========================================================================================================================
+                                                            Começo Faq
+=============================================================================================================================== */
+.faqd{
+    background-color: #e6d544d8;
+    height: 27em;
+    text-align: center;
+
+}
+
+.faq12{
+    box-sizing: border-box;
+    border-radius: 80px 0px 90px 0px;
+    color: black;
+}
+
+.faq12 p{
+    margin: 0;
+    padding:0;
+    font-weight: bold;    
+}
+
+.faq12 input{
+    width: 25%;
+    margin-bottom: 2em;
+}
+
+.faq12 input[type="text"], input[type="email"]{
+    border: none;
+    border-bottom: 1px solid grey;
+    background: transparent;
+    height: 40px;
+    outline: none;
+    color: #a318be;  
+    font-size:16px;
+}
+
+.faq12 input[type="submit"]{
+    border: none;
+    outline: none;
+    height: 35px;
+    color: #000;
+    background: rgba(255, 255, 255, 0.664);
+    border-radius: 20px;
+    transition: 1.2s;
+}
+
+.faq12 input[type="submit"]:hover{
+    cursor: pointer;
+    background: rgba(125, 0, 147, 0.562);
+    transition: 1.2s;
+}
+
+form a{
+    color: white;
+    
+}
+
+/* ===========================================================================================================================
+                                                            Fim Faq
+=============================================================================================================================== */
+
+h2{
+    font-size: 2em;
+    text-align: center;
+    padding:1em;
+}
+
+h3{
+    text-align: center;
+    font-size: 2.0em;
+}
+
+.mapagoogle{
+    height: 75%;
+    width: 13%;
+}
+
+/* ===========================================================================================================================
+                                                            Fim css web
+=============================================================================================================================== */
+/* ===========================================================================================================================
+                                                            Começo Midia
+=============================================================================================================================== */
+@media (max-width: 1200px) {
+    .segundaparteheader p {
+        font-size: 1.6em;
+        font-weight: bold;
+        padding-left: 2.5em;
+        width: 45%;
+    }
+
+    header{
+        font-family: 'Raleway', sans-serif;
+        background-color: #e8d94f;
+        height: 100%;
+        background-repeat: no-repeat;
+        }
+
+        
+.botaoeventos input{
+    width: 100%;
+    margin-bottom: 1em;
+}
+        
+}
+

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Galeria | Fotos top para você!</title>
+    <link href="img/logo (1).png" rel="icon" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/pggaleria.css">
+    <script src="https://kit.fontawesome.com/349a64cb04.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <br>
+        <br>
+        <nav>
+            <div class="section-container">
+                <ul>
+                    <li id="bt-mobile-menu">
+                        <a href="javascript:void(0);" class="icon" onclick="toggleMobileMenu()">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </li>
+                    <li id="logo-tipo">
+                        <img src="img/logo (1).png" title="logo" height="90" width="120">
+                    </li>
+                    <li class="bt-common-menu"><a class="bt-common-menu" class="bt-common-menu" class="bt-common-menu"
+                            class="bt-common-menu" href="pgp.html ">Home</a></li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="pggaleria.html">Galeria</a></li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="pgreservas.html">Reservar</a></li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="pglogin.html">Login</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+<main>
+    <h1> Galeria de fotos</h1>
+    <br>
+    <br>
+    <h2>Casamentos</h2>
+
+    <div class="foto">
+        <img src="img/foto-casamento-1.jpg">
+        <img src="img/foto-casamento-2.jpg">
+        <img src="img/foto-casamento-3.jpg">
+    </div>
+
+
+
+
+    <br>
+
+    <h3>Festas de 15 anos</h3>
+
+    <div class="foto">
+        <img src="img/foto-festa15-1.jpg">
+        <img src="img/foto-festa15-2.jpg">
+        <img src="img/foto-festa15-3.jpg">
+    </div>
+
+    <br>
+
+    <h4>Raves</h4>
+
+    <div class="foto">
+        <img src="img/foto-rave-1.jpg">
+        <img src="img/foto-rave-2.jpg">
+    </div>
+    </div>
+    </div>
+</main>   
+    <footer>
+        <address>
+            Avenida de Limeira, 539 - Campos Elíseos - SP
+            <br />
+            roletop777amorepazsaopauloroletop@email.com
+            <br />
+            (11) 1234 6789
+
+        </address>
+    </footer>
+
+
+
+    <script>
+        function toggleMobileMenu() {
+            var ul = document.querySelector("nav ul");
+            var commonButtons = document.querySelectorAll("nav .bt-common-menu");
+            var icon = document.querySelector(".icon > i");
+            ul.classList.toggle("mobile-mode");
+            if (icon.classList.contains("fa-bars")) {
+                icon.classList.remove("fa-bars");
+                icon.classList.remove("fa");
+                icon.classList.add("fas");
+                icon.classList.add("fa-skull");
+            } else {
+                icon.classList.remove("fas");
+                icon.classList.remove("fa-skull");
+                icon.classList.add("fa");
+                icon.classList.add("fa-bars");
+            }
+            for (var button of commonButtons) {
+                button.classList.toggle("active");
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>

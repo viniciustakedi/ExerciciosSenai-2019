@@ -1,0 +1,145 @@
+/* ===========================================================================================================================
+                                                            COMEÇO BODY
+=============================================================================================================================== */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+font-family: 'Raleway', sans-serif;
+text-align: center;
+background-color: #e8d94f;
+
+
+}
+/* ===========================================================================================================================
+                                                            FIM BODY
+=============================================================================================================================== */
+/* ===========================================================================================================================
+                                                        COMEÇO HEADER
+=============================================================================================================================== */
+header{
+    text-align: center;
+}
+
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.2em;
+    list-style-type: none;
+    padding: 2.5em;
+}
+
+nav ul > li {
+    width: 100%;
+    text-align: center;
+}
+
+nav ul > li > a {
+	display: block;
+	padding: 0.4em;
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
+}
+
+nav ul > li > a:hover {
+    color: #fff;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/* ===========================================================================================================================
+                                                            FIM HEADER
+=============================================================================================================================== */
+/* ===========================================================================================================================
+                                                            Começo eventos aceitos
+=============================================================================================================================== */
+
+h2{
+    font-display: bold;
+    margin: 1.2em;
+    background-color: green;
+    border:0.1em solid #000;
+    
+}
+
+h3{
+    font-size: 2em;
+}
+
+.evento2{
+    padding: 1em;
+    margin: 1em;
+}
+
+.eventosaceitos p{
+    font-size: 1.3em;
+    padding: 0.5em;
+}
+
+.evento1 input[type="submit"]{
+    border: none;
+    outline: none;
+    height: 35px;
+    color: #000;
+    background: rgba(255, 255, 255, 0.664);
+    transition: 1.2s;
+}
+
+.evento1 input[type="submit"]:hover{
+    cursor: pointer;
+    background: rgba(125, 0, 147, 0.562);
+    transition: 0.2s;
+    border:0.1em solid #000;
+}
+
+/* ===========================================================================================================================
+                                                    fim eventos aceitos
+=============================================================================================================================== */
+/* ===========================================================================================================================
+                                                    começo eventos recusados
+=============================================================================================================================== */
+
+.evento2{
+    padding: 1em;
+    margin: 1em;
+}
+
+.eventosrecusados p{
+    font-size: 1.3em;
+    padding: 0.5em;
+}
+
+.evento1 input[type="submit"]{
+    border: none;
+    outline: none;
+    height: 35px;
+    color: #000;
+    background: rgba(255, 255, 255, 0.664);
+    transition: 1.2s;
+}
+
+.evento1 input[type="submit"]:hover{
+    cursor: pointer;
+    background: rgba(125, 0, 147, 0.562);
+    transition: 0.2s;
+    border:0.1em solid #000;
+}
+
+.eventosrecusados h2{
+    font-display: bold;
+    margin: 1.2em;
+    background-color: red;
+    border:0.1em solid #000;
+    
+}

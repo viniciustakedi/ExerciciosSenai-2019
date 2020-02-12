@@ -1,0 +1,163 @@
+/* ===========================================================================================================================
+                                                            COMEÇO BODY
+=============================================================================================================================== */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+font-family: 'Raleway', sans-serif;
+text-align: center;
+background-color: #a318be  ;
+
+
+}
+/* ===========================================================================================================================
+                                                            FIM BODY
+=============================================================================================================================== */
+/* ===========================================================================================================================
+                                                        COMEÇO HEADER
+=============================================================================================================================== */
+header{
+    text-align: center;
+}
+
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.2em;
+    list-style-type: none;
+    padding: 2.5em;
+}
+
+nav ul > li {
+    width: 100%;
+    text-align: center;
+}
+
+nav ul > li > a {
+	display: block;
+	padding: 0.4em;
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
+}
+
+nav ul > li > a:hover {
+    color: #fff;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/* ===========================================================================================================================
+                                                            FIM HEADER
+=============================================================================================================================== */
+.pedidos{
+    width: 430px;
+    height: 640px;
+    border:2px solid #000;
+    border-radius: 80px 0px 90px 0px;
+    color: #fff;
+    background-color: rgba(0,0,5,0.8);
+    top: 65%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 60px 28px;
+}
+
+.usuario{
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 112px;
+}
+
+
+h2{
+    margin: 0;
+    padding-top: 0;
+    padding-left: 0;
+    padding-bottom: 20px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size:15px;
+    color: darkgray;
+}
+
+.pedidos p{
+    margin: 0;
+    padding:0;
+    font-weight: bold;    
+}
+
+.pedidos  input{
+    width: 100%;
+    margin-bottom: 21px;;
+}
+
+.pedidos  input[type="text"], input[type="password"]{
+    border: none;
+    border-bottom: 1px solid white;
+    background: transparent;
+    height: 40px;
+    outline: none;
+    color:white;
+    font-size:16px;
+}
+
+.pedidos  input[type="submit"]{
+    border: none;
+    outline: none;
+    height: 35px;
+    color: #000;
+    background: #fff;
+    border-radius: 20px;
+    transition: 1.2s;
+}
+
+.pedidos  input[name="aceitar1"]:hover{
+    cursor: pointer;
+    background: green;
+    transition: 0.4s;
+    padding: 1em;
+}
+
+.pedidos  input[name="recusar2"]:hover{
+    cursor: pointer;
+    background: red;
+    transition: 0.4s;
+}
+
+.pedidos  input[name="proximo3"]:hover{
+    cursor: pointer;
+    background:cyan;
+    transition: 0.4s;
+}
+
+form a{
+    color: white;
+    
+}
+
+.nome-festa p{
+    font-size: 1.7em;
+    font-display: bold;
+}
+
+.texto-festa p{
+    padding: 2.5em;
+    font-size: 0.9em;
+    font-style: italic;
+}

@@ -1,0 +1,18 @@
+
+<link rel="stylesheet" type= "text/css" href="~/css/pglogin.css">
+        <main>
+            <div class="login">
+                <h1>Login</h1>
+
+                <form name="formteste" action='@Url.Action("Login" , "Cliente")' method="POST">
+                    <p>Email</p>
+                    <input type="text" name="email" placeholder="Insira seu email">
+                    <p>Senha</p>
+                    <input type="password" name="senha" placeholder="Insira sua senha">
+                    <input type="submit" name="" value="Login">
+                    <div class="Cadastro1">
+                        <a href='@Url.Action("Index", "Cadastro")'>Clique aqui para se cadastrar!</a>
+                    </div>
+                </form>
+            </div>
+        </main>
